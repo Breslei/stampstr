@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/09/2017 13:38:45 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.PacientePossuiDispositivo" table="Paciente_possui_Dispositivo" catalog="Team_Medicos" optimistic-lock="version">
+        <composite-id name="id" class="pojos.PacientePossuiDispositivoId">
+            <key-property name="pacId" type="int">
+                <column name="pac_ID" />
+            </key-property>
+            <key-property name="dispId" type="int">
+                <column name="disp_ID" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
