@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/10/2017 20:08:01 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojo.TbDispositivo" table="tb_Dispositivo" catalog="Team_Medicos" optimistic-lock="version">
+        <id name="dispId" type="java.lang.Integer">
+            <column name="disp_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="dispIp" type="java.lang.Integer">
+            <column name="disp_IP" />
+        </property>
+        <property name="dispNome" type="string">
+            <column name="disp_Nome" length="40" />
+        </property>
+        <property name="dispModelo" type="java.lang.Integer">
+            <column name="disp_Modelo" />
+        </property>
+        <property name="dispMarca" type="string">
+            <column name="disp_marca" length="25" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/10/2017 20:08:01 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojo.TbTrauma" table="tb_Trauma" catalog="Team_Medicos" optimistic-lock="version">
+        <id name="traId" type="java.lang.Integer">
+            <column name="Tra_id" />
+            <generator class="identity" />
+        </id>
+        <property name="traVeicMotor" type="string">
+            <column name="Tra_VeicMotor" length="4" not-null="true" />
+        </property>
+        <property name="traForcDesac" type="string">
+            <column name="Tra_ForcDesac" length="4" not-null="true" />
+        </property>
+        <property name="traForcDesacDesc" type="string">
+            <column name="Tra_ForcDesacDesc" length="120" />
+        </property>
+        <property name="traEjecaoVeic" type="string">
+            <column name="Tra_EjecaoVeic" length="4" not-null="true" />
+        </property>
+        <property name="traNegacao" type="string">
+            <column name="Tra_Negacao" length="4" not-null="true" />
+        </property>
+        <property name="traNegacaoDesc" type="string">
+            <column name="Tra_NegacaoDesc" length="120" />
+        </property>
+        <property name="traFraturaPrimCost" type="string">
+            <column name="Tra_FraturaPrimCost" length="4" not-null="true" />
+        </property>
+        <property name="traFraturaPrimCostDesc" type="string">
+            <column name="Tra_FraturaPrimCostDesc" length="120" />
+        </property>
+        <property name="traFraturaSegCost" type="string">
+            <column name="Tra_FraturaSegCost" length="4" not-null="true" />
+        </property>
+        <property name="traFraturaSegCostDesc" type="string">
+            <column name="Tra_FraturaSegCostDesc" length="120" />
+        </property>
+        <property name="traAspiracao" type="string">
+            <column name="Tra_Aspiracao" length="4" not-null="true" />
+        </property>
+        <property name="traAspiracaoDesc" type="string">
+            <column name="Tra_AspiracaoDesc" length="120" />
+        </property>
+        <property name="traPerdaConsc" type="string">
+            <column name="Tra_PerdaConsc" length="4" not-null="true" />
+        </property>
+        <property name="traPerdaConscDesc" type="string">
+            <column name="Tra_PerdaConscDesc" length="120" />
+        </property>
+        <property name="traAcidMotocic" type="string">
+            <column name="Tra_AcidMotocic" length="4" not-null="true" />
+        </property>
+        <property name="traAcidMotocicDesc" type="string">
+            <column name="Tra_AcidMotocicDesc" length="120" />
+        </property>
+        <property name="traContPulm" type="string">
+            <column name="Tra_ContPulm" length="120" not-null="true" />
+        </property>
+        <property name="traObitoLocal" type="string">
+            <column name="Tra_ObitoLocal" length="120" not-null="true" />
+        </property>
+        <property name="traAtropelamentoPed" type="string">
+            <column name="Tra_AtropelamentoPed" length="9" not-null="true" />
+        </property>
+        <property name="traFraturaCost" type="string">
+            <column name="Tra_FraturaCost" length="18" not-null="true" />
+        </property>
+        <property name="traFraturaCostDesc" type="string">
+            <column name="Tra_FraturaCostDesc" length="120" />
+        </property>
+    </class>
+</hibernate-mapping>
